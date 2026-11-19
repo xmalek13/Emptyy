@@ -1,0 +1,8 @@
+state.json
+state.json.tmp
+chunk.json
+REPORT.md
+report.txt
+logs/
+__pycache__/
+*.pyc
