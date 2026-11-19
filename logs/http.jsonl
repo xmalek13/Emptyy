@@ -38,3 +38,17 @@
 {"ts": "2026-11-19T18:33:41-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/meteora-damm-v2/pools?sort=h24_tx_count_desc", "status": 429, "ms": 25, "try": 0}
 {"ts": "2026-11-19T18:33:41-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/meteora-damm-v2/pools?sort=h24_tx_count_desc", "status": 429, "ms": 27, "try": 1}
 {"ts": "2026-11-19T18:33:43-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/meteora-damm-v2/pools?sort=h24_tx_count_desc", "status": 429, "ms": 28, "try": 2}
+{"ts": "2026-11-19T18:33:47-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/meteora-dbc/pools?sort=h24_tx_count_desc", "status": 429, "ms": 28, "try": 0}
+{"ts": "2026-11-19T18:33:48-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/meteora-dbc/pools?sort=h24_tx_count_desc", "status": 429, "ms": 31, "try": 1}
+{"ts": "2026-11-19T18:33:50-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/pump-fun/pools?sort=h24_tx_count_desc", "status": 429, "ms": 26, "try": 0}
+{"ts": "2026-11-19T18:33:50-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/pump-fun/pools?sort=h24_tx_count_desc", "status": 429, "ms": 26, "try": 1}
+{"ts": "2026-11-19T18:33:52-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/pump-fun/pools?sort=h24_tx_count_desc", "status": 429, "ms": 26, "try": 2}
+{"ts": "2026-11-19T18:33:56-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/letsbonk-fun/pools?sort=h24_tx_count_desc", "status": 429, "ms": 28, "try": 0}
+{"ts": "2026-11-19T18:33:57-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/letsbonk-fun/pools?sort=h24_tx_count_desc", "status": 429, "ms": 26, "try": 1}
+{"ts": "2026-11-19T18:33:58-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/letsbonk-fun/pools?sort=h24_tx_count_desc", "status": 429, "ms": 24, "try": 2}
+{"ts": "2026-11-19T18:34:05-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/orca/pools?sort=h24_tx_count_desc", "status": 429, "ms": 33, "try": 0}
+{"ts": "2026-11-19T18:34:06-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/orca/pools?sort=h24_tx_count_desc", "status": 429, "ms": 27, "try": 1}
+{"ts": "2026-11-19T18:34:07-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/orca/pools?sort=h24_tx_count_desc", "status": 429, "ms": 26, "try": 2}
+{"ts": "2026-11-19T18:34:12-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/raydium-clmm/pools?sort=h24_tx_count_desc", "status": 429, "ms": 28, "try": 0}
+{"ts": "2026-11-19T18:34:12-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/raydium-clmm/pools?sort=h24_tx_count_desc", "status": 429, "ms": 28, "try": 1}
+{"ts": "2026-11-19T18:34:26-05:00", "url": "https://lite-api.jup.ag/price/v3?ids=7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump,So11111111111111111111111111", "status": 429, "ms": 26, "try": 0}
