@@ -7242,3 +7242,6 @@
 {"ts": "2026-11-20T00:12:22-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/raydium-clmm/pools?sort=h24_tx_count_desc", "status": 429, "ms": 28, "try": 0}
 {"ts": "2026-11-20T00:12:22-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/raydium-clmm/pools?sort=h24_tx_count_desc", "status": 429, "ms": 26, "try": 1}
 {"ts": "2026-11-20T00:12:24-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/raydium-clmm/pools?sort=h24_tx_count_desc", "status": 429, "ms": 26, "try": 2}
+{"ts": "2026-11-20T00:13:25-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/trending_pools?duration=5m&page=1", "status": 429, "ms": 33, "try": 0}
+{"ts": "2026-11-20T00:13:26-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/trending_pools?duration=5m&page=1", "status": 429, "ms": 39, "try": 1}
+{"ts": "2026-11-20T00:13:27-05:00", "url": "https://api.geckoterminal.com/api/v2/networks/solana/trending_pools?duration=5m&page=1", "status": 429, "ms": 36, "try": 2}

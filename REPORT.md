@@ -3,10 +3,10 @@
 Simulation only. No wallets, private keys, signing, or real orders.
 
 ```
-MemeDesk v2 PAPER TRADING (simulated) | started 2026-11-19T18:32:05-05:00 | ends 2026-11-20T09:00:00-05:00 | pid 2406 NOT RUNNING
+MemeDesk v2 PAPER TRADING (simulated) | started 2026-11-19T18:32:05-05:00 | ends 2026-11-20T09:00:00-05:00 | pid 2252 RUNNING
 Box pauses seen by risk thread: 0 (0 s total)
-Last scan 2026-11-20T00:12:38-05:00 (137.7s) | last risk tick 2026-11-20T00:12:03-05:00 (54 ms) | risk ticks 6800
-Scan loops 142 | last scan: discovered 462 tokens, 460 pairs, 23 in Scout range
+Last scan 2026-11-20T00:12:38-05:00 (Nones) | last risk tick 2026-11-20T00:13:29-05:00 (72 ms) | risk ticks 6807
+Scan loops 142 | last scan: discovered None tokens, None pairs, None in Scout range
 Evaluations 657 | unique tokens evaluated 36 | RugCheck ok/fail 159/0 | API errors 2155
 Unique evaluated tokens by discovery source: {'dstoken-boosts': 1, 'gt:trending_pools': 3, 'gt:dexes/pumpswap/pools': 2, 'dstoken-profiles': 7, 'ds-search': 6, 'gt:pools': 1, 'gt:dexes/bags-fm/pools': 13, 'gt:dexes/meteora-damm-v2/pools': 2, 'dscommunity-takeovers': 1}
 
@@ -64,9 +64,9 @@ Analyst score distribution (n=90, median 53.7, max 85.0): {'40-44': 4, '45-49': 
   buys: 4 (4 filled at Jupiter quote), fill vs fast mid median +1.50%, round-trip executable cost median 2.56%
 
 Latency per source (ms, every HTTP call incl. retries; status 200 only):
-  http:api.dexscreener.com   n=  5528 median      33  p95     113  max    1135
-  http:lite-api.jup.ag/price n=  6946 median      40  p95     125  max    2737
-  http:api.geckoterminal.com n=  1679 median      34  p95     341  max    1397
+  http:api.dexscreener.com   n=  5532 median      33  p95     113  max    1135
+  http:lite-api.jup.ag/price n=  6953 median      40  p95     125  max    2737
+  http:api.geckoterminal.com n=  1684 median      34  p95     340  max    1397
   http:api.rugcheck.xyz      n=   159 median     367  p95     895  max    2075
   http:lite-api.jup.ag/quote n=    24 median      36  p95     104  max     160
 Divergence fast(Jupiter) vs slow(DexScreener) [scan_candidate] n=1184: median |div| 1.16%, max |div| 50.82%, |div|>2.6% costs: 304, fast BELOW slow by >2.6%: 200
