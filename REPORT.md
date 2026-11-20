@@ -5,14 +5,14 @@ Simulation only. No wallets, private keys, signing, or real orders.
 ```
 MemeDesk v2 PAPER TRADING (simulated) | started 2026-11-19T18:32:05-05:00 | ends 2026-11-20T09:00:00-05:00 | pid 3039 RUNNING
 Box pauses seen by risk thread: 0 (0 s total)
-Last scan 2026-11-20T07:43:48-05:00 (139.5s) | last risk tick 2026-11-20T07:45:13-05:00 (22 ms) | risk ticks 15812
-Scan loops 328 | last scan: discovered 451 tokens, 415 pairs, 8 in Scout range
-Evaluations 1519 | unique tokens evaluated 49 | RugCheck ok/fail 365/0 | API errors 5039
-Unique evaluated tokens by discovery source: {'dstoken-boosts': 1, 'gt:trending_pools': 5, 'gt:dexes/pumpswap/pools': 2, 'dstoken-profiles': 11, 'ds-search': 8, 'gt:pools': 1, 'gt:dexes/bags-fm/pools': 18, 'gt:dexes/meteora-damm-v2/pools': 2, 'dscommunity-takeovers': 1}
+Last scan 2026-11-20T07:53:47-05:00 (146.3s) | last risk tick 2026-11-20T07:55:16-05:00 (22 ms) | risk ticks 16013
+Scan loops 332 | last scan: discovered 442 tokens, 441 pairs, 20 in Scout range
+Evaluations 1542 | unique tokens evaluated 51 | RugCheck ok/fail 369/0 | API errors 5106
+Unique evaluated tokens by discovery source: {'dstoken-boosts': 1, 'gt:trending_pools': 5, 'gt:dexes/pumpswap/pools': 2, 'dstoken-profiles': 11, 'ds-search': 8, 'gt:pools': 1, 'gt:dexes/bags-fm/pools': 20, 'gt:dexes/meteora-damm-v2/pools': 2, 'dscommunity-takeovers': 1}
 
                                ORIGINAL (>=70)   ADJUSTED (>=75)
-Analyst pass / fail                     53/171            19/205
-Evaluations killed                        1295              1295
+Analyst pass / fail                     54/173            20/207
+Evaluations killed                        1315              1315
 Closed trades                               10                 9
 Win rate                                 30.0%             33.3%
 Avg win %                                +6.33             +8.67
@@ -26,28 +26,28 @@ Daily-loss halt                              -                 -
 
 Kills by PRIMARY reason:
   bundled>10%(proxy:insider_networks)                 71      71
-  liquidity<40k                                      930     930
-  mint_authority_not_revoked                          63      63
+  liquidity<40k                                      946     946
+  mint_authority_not_revoked                          64      64
   pumped>80%_1h                                       34      34
   top10>25%                                            8       8
-  vol1h<50k                                          189     189
+  vol1h<50k                                          192     192
 
 Kills by ANY reason:
-  bundled>10%(proxy:insider_networks)                134     134
-  freeze_authority_not_revoked                        63      63
-  honeypot/token2022_transfer_restriction              0      63
-  liquidity<40k                                      930     930
-  lp_not_burned_or_locked                             63      63
-  mint_authority_not_revoked                          63      63
+  bundled>10%(proxy:insider_networks)                135     135
+  freeze_authority_not_revoked                        64      64
+  honeypot/token2022_transfer_restriction              0      64
+  liquidity<40k                                      946     946
+  lp_not_burned_or_locked                             64      64
+  mint_authority_not_revoked                          64      64
   pumped>80%_1h                                       42      42
-  top10>25%                                           71      71
-  unknown:price_change_1h                            905     905
-  vol1h<50k                                         1113    1113
+  top10>25%                                           72      72
+  unknown:price_change_1h                            921     921
+  vol1h<50k                                         1132    1132
   (kills caused ONLY by unknown data)                  0       0
 
-Analyst score distribution (n=224, median 56.8, max 85.0): {'40-44': 10, '45-49': 27, '50-54': 56, '55-59': 35, '60-64': 21, '65-69': 22, '70-74': 34, '75-79': 16, '80-84': 2, '85-89': 1}
+Analyst score distribution (n=227, median 56.8, max 85.0): {'40-44': 10, '45-49': 27, '50-54': 57, '55-59': 36, '60-64': 21, '65-69': 22, '70-74': 34, '75-79': 17, '80-84': 2, '85-89': 1}
 
-[original] entry blocks: {'cooldown_4h_after_loss': 32, 'already_open': 7, 'max_2_entries_per_token_day': 4}
+[original] entry blocks: {'cooldown_4h_after_loss': 32, 'already_open': 7, 'max_2_entries_per_token_day': 5}
   CLOSED OGTA         -7.51%  $-6.01  stop  18:34:23 -> 18:35:24
   CLOSED AI           -9.62%  $-7.65  stop  18:58:26 -> 18:59:06
   CLOSED LOOSY       -11.06%  $-8.73  stop  21:58:13 -> 22:00:54
@@ -61,7 +61,7 @@ Analyst score distribution (n=224, median 56.8, max 85.0): {'40-44': 10, '45-49'
   stop exits: fill vs stop level median -1.95%, worst -3.60% (n=10)
   buys: 10 (10 filled at Jupiter quote), fill vs fast mid median +1.18%, round-trip executable cost median 2.84%
 
-[adjusted] entry blocks: {'cooldown_4h_after_loss': 9, 'already_open': 1}
+[adjusted] entry blocks: {'cooldown_4h_after_loss': 10, 'already_open': 1}
   CLOSED AI          -30.26%  $-7.56  stop  18:58:29 -> 19:02:42
   CLOSED OGTA        -21.49%  $-5.33  stop  19:58:11 -> 20:01:36
   CLOSED LOOSY       -20.57%  $-5.08  stop  21:58:16 -> 22:18:00
@@ -75,11 +75,11 @@ Analyst score distribution (n=224, median 56.8, max 85.0): {'40-44': 10, '45-49'
   buys: 9 (9 filled at Jupiter quote), fill vs fast mid median +1.32%, round-trip executable cost median 2.67%
 
 Latency per source (ms, every HTTP call incl. retries; status 200 only):
-  http:api.dexscreener.com   n= 12994 median      38  p95     113  max    1135
-  http:lite-api.jup.ag/price n= 16141 median      41  p95     125  max    2737
-  http:api.geckoterminal.com n=  3832 median      39  p95     339  max    1397
-  http:api.rugcheck.xyz      n=   365 median     376  p95     575  max    2075
+  http:api.dexscreener.com   n= 13148 median      38  p95     113  max    1135
+  http:lite-api.jup.ag/price n= 16346 median      41  p95     125  max    2737
+  http:api.geckoterminal.com n=  3875 median      39  p95     343  max    1397
+  http:api.rugcheck.xyz      n=   369 median     376  p95     575  max    2075
   http:lite-api.jup.ag/quote n=    58 median      36  p95     128  max     160
-Divergence fast(Jupiter) vs slow(DexScreener) [scan_candidate] n=2711: median |div| 1.04%, max |div| 50.82%, |div|>2.6% costs: 596, fast BELOW slow by >2.6%: 409
+Divergence fast(Jupiter) vs slow(DexScreener) [scan_candidate] n=2738: median |div| 1.04%, max |div| 50.82%, |div|>2.6% costs: 602, fast BELOW slow by >2.6%: 414
 Divergence fast(Jupiter) vs slow(DexScreener) [open_position] n=467: median |div| 1.34%, max |div| 11.58%, |div|>2.6% costs: 113, fast BELOW slow by >2.6%: 66
 ```
