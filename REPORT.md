@@ -5,49 +5,50 @@ Simulation only. No wallets, private keys, signing, or real orders.
 ```
 MemeDesk v2 PAPER TRADING (simulated) | started 2026-11-19T18:32:05-05:00 | ends 2026-11-20T09:00:00-05:00 | pid 3039 RUNNING
 Box pauses seen by risk thread: 0 (0 s total)
-Last scan 2026-11-20T08:23:08-05:00 (143.2s) | last risk tick 2026-11-20T08:25:25-05:00 (21 ms) | risk ticks 16616
-Scan loops 344 | last scan: discovered 461 tokens, 427 pairs, 10 in Scout range
-Evaluations 1575 | unique tokens evaluated 51 | RugCheck ok/fail 381/0 | API errors 5304
+Last scan 2026-11-20T08:35:27-05:00 (148.1s) | last risk tick 2026-11-20T08:35:29-05:00 (596 ms) | risk ticks 16817
+Scan loops 349 | last scan: discovered 442 tokens, 440 pairs, 21 in Scout range
+Evaluations 1596 | unique tokens evaluated 51 | RugCheck ok/fail 386/0 | API errors 5368
 Unique evaluated tokens by discovery source: {'dstoken-boosts': 1, 'gt:trending_pools': 5, 'gt:dexes/pumpswap/pools': 2, 'dstoken-profiles': 11, 'ds-search': 8, 'gt:pools': 1, 'gt:dexes/bags-fm/pools': 20, 'gt:dexes/meteora-damm-v2/pools': 2, 'dscommunity-takeovers': 1}
 
                                ORIGINAL (>=70)   ADJUSTED (>=75)
-Analyst pass / fail                     55/180            20/215
-Evaluations killed                        1340              1340
+Analyst pass / fail                     56/182            20/218
+Evaluations killed                        1358              1358
 Closed trades                               10                 9
 Win rate                                 30.0%             33.3%
 Avg win %                                +6.33             +8.67
 Avg loss %                               -9.00            -20.07
 Realized P&L $                          -34.82            -23.42
-Equity $ (MTM)                          965.18            976.58
-Total P&L $                             -34.82            -23.42
-Cash $                                  965.18            976.58
-Open positions                               0                 0
+Equity $ (MTM)                          962.13            976.58
+Total P&L $                             -37.87            -23.42
+Cash $                                  887.96            976.58
+Open positions                               1                 0
 Daily-loss halt                              -                 -
 
 Kills by PRIMARY reason:
-  bundled>10%(proxy:insider_networks)                 73      73
-  liquidity<40k                                      963     963
-  mint_authority_not_revoked                          66      66
+  bundled>10%(proxy:insider_networks)                 74      74
+  liquidity<40k                                      977     977
+  mint_authority_not_revoked                          67      67
   pumped>80%_1h                                       34      34
   top10>25%                                            8       8
-  vol1h<50k                                          196     196
+  vol1h<50k                                          198     198
 
 Kills by ANY reason:
-  bundled>10%(proxy:insider_networks)                139     139
-  freeze_authority_not_revoked                        66      66
-  honeypot/token2022_transfer_restriction              0      66
-  liquidity<40k                                      963     963
-  lp_not_burned_or_locked                             66      66
-  mint_authority_not_revoked                          66      66
+  bundled>10%(proxy:insider_networks)                141     141
+  freeze_authority_not_revoked                        67      67
+  honeypot/token2022_transfer_restriction              0      67
+  liquidity<40k                                      977     977
+  lp_not_burned_or_locked                             67      67
+  mint_authority_not_revoked                          67      67
   pumped>80%_1h                                       42      42
-  top10>25%                                           74      74
-  unknown:price_change_1h                            938     938
-  vol1h<50k                                         1153    1153
+  top10>25%                                           75      75
+  unknown:price_change_1h                            952     952
+  vol1h<50k                                         1169    1169
   (kills caused ONLY by unknown data)                  0       0
 
-Analyst score distribution (n=235, median 56.8, max 85.0): {'40-44': 10, '45-49': 27, '50-54': 60, '55-59': 38, '60-64': 23, '65-69': 22, '70-74': 35, '75-79': 17, '80-84': 2, '85-89': 1}
+Analyst score distribution (n=238, median 57.5, max 85.0): {'40-44': 10, '45-49': 27, '50-54': 60, '55-59': 38, '60-64': 23, '65-69': 24, '70-74': 36, '75-79': 17, '80-84': 2, '85-89': 1}
 
 [original] entry blocks: {'cooldown_4h_after_loss': 32, 'already_open': 7, 'max_2_entries_per_token_day': 6}
+  OPEN Leonida    entry 0.000306922 last 0.000306922 (+0.0%) stop 0.000288506 trail off cost $77.21 since 2026-11-20T08:35:27-05:00
   CLOSED OGTA         -7.51%  $-6.01  stop  18:34:23 -> 18:35:24
   CLOSED AI           -9.62%  $-7.65  stop  18:58:26 -> 18:59:06
   CLOSED LOOSY       -11.06%  $-8.73  stop  21:58:13 -> 22:00:54
@@ -59,7 +60,7 @@ Analyst score distribution (n=235, median 56.8, max 85.0): {'40-44': 10, '45-49'
   CLOSED iAgent      -10.24%  $-7.89  stop  03:51:36 -> 03:52:29
   CLOSED LOOSY       +12.05%  $+9.22  trailing_stop  06:41:47 -> 07:20:37
   stop exits: fill vs stop level median -1.95%, worst -3.60% (n=10)
-  buys: 10 (10 filled at Jupiter quote), fill vs fast mid median +1.18%, round-trip executable cost median 2.84%
+  buys: 11 (11 filled at Jupiter quote), fill vs fast mid median +1.21%, round-trip executable cost median 2.91%
 
 [adjusted] entry blocks: {'cooldown_4h_after_loss': 10, 'already_open': 1}
   CLOSED AI          -30.26%  $-7.56  stop  18:58:29 -> 19:02:42
@@ -75,11 +76,11 @@ Analyst score distribution (n=235, median 56.8, max 85.0): {'40-44': 10, '45-49'
   buys: 9 (9 filled at Jupiter quote), fill vs fast mid median +1.32%, round-trip executable cost median 2.67%
 
 Latency per source (ms, every HTTP call incl. retries; status 200 only):
-  http:api.dexscreener.com   n= 13613 median      38  p95     113  max    1135
-  http:lite-api.jup.ag/price n= 16961 median      40  p95     125  max    2737
-  http:api.geckoterminal.com n=  4011 median      39  p95     343  max    1397
-  http:api.rugcheck.xyz      n=   381 median     376  p95     575  max    2410
-  http:lite-api.jup.ag/quote n=    58 median      36  p95     128  max     160
-Divergence fast(Jupiter) vs slow(DexScreener) [scan_candidate] n=2815: median |div| 1.02%, max |div| 50.82%, |div|>2.6% costs: 611, fast BELOW slow by >2.6%: 421
-Divergence fast(Jupiter) vs slow(DexScreener) [open_position] n=467: median |div| 1.34%, max |div| 11.58%, |div|>2.6% costs: 113, fast BELOW slow by >2.6%: 66
+  http:api.dexscreener.com   n= 13799 median      38  p95     113  max    1135
+  http:lite-api.jup.ag/price n= 17168 median      40  p95     124  max    2737
+  http:api.geckoterminal.com n=  4055 median      39  p95     343  max    1397
+  http:api.rugcheck.xyz      n=   386 median     376  p95     575  max    2410
+  http:lite-api.jup.ag/quote n=    60 median      36  p95     128  max     160
+Divergence fast(Jupiter) vs slow(DexScreener) [scan_candidate] n=2848: median |div| 1.02%, max |div| 50.82%, |div|>2.6% costs: 619, fast BELOW slow by >2.6%: 427
+Divergence fast(Jupiter) vs slow(DexScreener) [open_position] n=468: median |div| 1.34%, max |div| 11.58%, |div|>2.6% costs: 113, fast BELOW slow by >2.6%: 66
 ```
