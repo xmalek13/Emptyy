@@ -5,26 +5,26 @@
   "run_id": "44679537839",
   "run_url": "https://github.com/xmalek13/Emptyy/actions/runs/44679537839",
   "event": "workflow_dispatch",
-  "persisted_at": "2026-11-20T07:24:01Z",
+  "persisted_at": "2026-11-20T07:34:03Z",
   "reason": "interval",
-  "scan_loops": 196,
-  "evaluations": 926,
-  "risk_ticks": 9416,
-  "api_errors": 2980,
-  "last_loop": "2026-11-20T02:22:48-05:00",
-  "last_scan_secs": 141.6,
-  "last_risk_tick": "2026-11-20T02:23:59-05:00",
+  "scan_loops": 200,
+  "evaluations": 950,
+  "risk_ticks": 9617,
+  "api_errors": 3044,
+  "last_loop": "2026-11-20T02:32:22-05:00",
+  "last_scan_secs": 136.6,
+  "last_risk_tick": "2026-11-20T02:34:02-05:00",
   "unique_tokens": 40,
   "books": {
     "original": {
-      "equity": 965.4093479801728,
+      "equity": 965.0213918940715,
       "cash": 890.5254166207804,
       "open": 1
     },
     "adjusted": {
-      "equity": 972.3918918600976,
-      "cash": 952.0318970980954,
-      "open": 1
+      "equity": 971.2980677968254,
+      "cash": 971.2980677968254,
+      "open": 0
     }
   }
 }
