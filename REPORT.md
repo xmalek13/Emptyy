@@ -3,10 +3,10 @@
 Simulation only. No wallets, private keys, signing, or real orders.
 
 ```
-MemeDesk v2 PAPER TRADING (simulated) | started 2026-11-19T18:32:05-05:00 | ends 2026-11-20T09:00:00-05:00 | pid 2252 NOT RUNNING
+MemeDesk v2 PAPER TRADING (simulated) | started 2026-11-19T18:32:05-05:00 | ends 2026-11-20T09:00:00-05:00 | pid 3039 RUNNING
 Box pauses seen by risk thread: 0 (0 s total)
-Last scan 2026-11-20T05:54:02-05:00 (138.9s) | last risk tick 2026-11-20T05:53:09-05:00 (37 ms) | risk ticks 13596
-Scan loops 284 | last scan: discovered 440 tokens, 440 pairs, 19 in Scout range
+Last scan 2026-11-20T05:54:02-05:00 (Nones) | last risk tick 2026-11-20T05:54:46-05:00 (21 ms) | risk ticks 13603
+Scan loops 284 | last scan: discovered None tokens, None pairs, None in Scout range
 Evaluations 1312 | unique tokens evaluated 44 | RugCheck ok/fail 308/0 | API errors 4305
 Unique evaluated tokens by discovery source: {'dstoken-boosts': 1, 'gt:trending_pools': 5, 'gt:dexes/pumpswap/pools': 2, 'dstoken-profiles': 10, 'ds-search': 8, 'gt:pools': 1, 'gt:dexes/bags-fm/pools': 14, 'gt:dexes/meteora-damm-v2/pools': 2, 'dscommunity-takeovers': 1}
 
@@ -18,8 +18,8 @@ Win rate                                 22.2%              0.0%
 Avg win %                                +3.46               n/a
 Avg loss %                               -9.00            -23.23
 Realized P&L $                          -44.04            -28.70
-Equity $ (MTM)                          955.96            971.03
-Total P&L $                             -44.04            -28.97
+Equity $ (MTM)                          955.96            970.88
+Total P&L $                             -44.04            -29.12
 Cash $                                  955.96            947.02
 Open positions                               0                 1
 Daily-loss halt                              -                 -
@@ -61,7 +61,7 @@ Analyst score distribution (n=186, median 57.3, max 85.0): {'40-44': 7, '45-49':
   buys: 9 (9 filled at Jupiter quote), fill vs fast mid median +1.21%, round-trip executable cost median 2.91%
 
 [adjusted] entry blocks: {'cooldown_4h_after_loss': 6}
-  OPEN iAgent     entry 0.000850756 last 0.000861965 (+1.3%) stop 0.00069762 trail off cost $24.28 since 2026-11-20T05:51:37-05:00
+  OPEN iAgent     entry 0.000850756 last 0.00085665 (+0.7%) stop 0.00069762 trail off cost $24.28 since 2026-11-20T05:51:37-05:00
   CLOSED AI          -30.26%  $-7.56  stop  18:58:29 -> 19:02:42
   CLOSED OGTA        -21.49%  $-5.33  stop  19:58:11 -> 20:01:36
   CLOSED LOOSY       -20.57%  $-5.08  stop  21:58:16 -> 22:18:00
@@ -71,11 +71,11 @@ Analyst score distribution (n=186, median 57.3, max 85.0): {'40-44': 7, '45-49':
   buys: 6 (6 filled at Jupiter quote), fill vs fast mid median +1.50%, round-trip executable cost median 2.68%
 
 Latency per source (ms, every HTTP call incl. retries; status 200 only):
-  http:api.dexscreener.com   n= 11165 median      39  p95     114  max    1135
-  http:lite-api.jup.ag/price n= 13884 median      46  p95     128  max    2737
-  http:api.geckoterminal.com n=  3363 median      40  p95     340  max    1397
+  http:api.dexscreener.com   n= 11170 median      39  p95     114  max    1135
+  http:lite-api.jup.ag/price n= 13891 median      46  p95     128  max    2737
+  http:api.geckoterminal.com n=  3367 median      40  p95     340  max    1397
   http:api.rugcheck.xyz      n=   308 median     378  p95     609  max    2075
   http:lite-api.jup.ag/quote n=    44 median      42  p95     128  max     160
 Divergence fast(Jupiter) vs slow(DexScreener) [scan_candidate] n=2362: median |div| 1.04%, max |div| 50.82%, |div|>2.6% costs: 529, fast BELOW slow by >2.6%: 364
-Divergence fast(Jupiter) vs slow(DexScreener) [open_position] n=279: median |div| 1.41%, max |div| 11.58%, |div|>2.6% costs: 68, fast BELOW slow by >2.6%: 47
+Divergence fast(Jupiter) vs slow(DexScreener) [open_position] n=280: median |div| 1.40%, max |div| 11.58%, |div|>2.6% costs: 68, fast BELOW slow by >2.6%: 47
 ```
